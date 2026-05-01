@@ -1,0 +1,20 @@
+May 01 17:09:54.893098 vd5659 wings[1260]: ERROR: [May  1 17:09:54.893] failed to close websocket connection connection=44c1aad6-2b5a-4da6-82d2-56d64c01162e error=tls: failed to send closeNotify alert (but connection was closed anyway): write tcp 92.63.189.64:8080->72.56.104.153:45004: write: broken pipe server=b1e06658-557b-46e4-bfec-f9871a1370bd subsystem=websocket
+May 01 17:15:40.059258 vd5659 wings[1260]: ERROR: [May  1 17:15:40.059] failed to send event over server websocket connection=8052d29d-809d-4a66-a691-3d9b7f672ee5 error=local error: tls: bad record MAC event=stats server=b1e06658-557b-46e4-bfec-f9871a1370bd subsystem=websocket
+May 01 17:15:40.059619 vd5659 wings[1260]: Stacktrace:
+May 01 17:15:40.059619 vd5659 wings[1260]: local error: tls: bad record MAC
+May 01 17:15:40.059619 vd5659 wings[1260]: github.com/pterodactyl/wings/router/websocket.(*Handler).listenForServerEvents.func1
+May 01 17:15:40.059619 vd5659 wings[1260]:         github.com/pterodactyl/wings/router/websocket/listeners.go:102
+May 01 17:15:40.059619 vd5659 wings[1260]: github.com/pterodactyl/wings/router/websocket.(*Handler).listenForServerEvents
+May 01 17:15:40.059619 vd5659 wings[1260]:         github.com/pterodactyl/wings/router/websocket/listeners.go:152
+May 01 17:15:40.059619 vd5659 wings[1260]: github.com/pterodactyl/wings/router/websocket.(*Handler).registerListenerEvents.func1
+May 01 17:15:40.059619 vd5659 wings[1260]:         github.com/pterodactyl/wings/router/websocket/listeners.go:31
+May 01 17:15:40.059619 vd5659 wings[1260]: runtime.goexit
+May 01 17:15:40.059619 vd5659 wings[1260]:         runtime/asm_amd64.s:1700
+May 01 17:15:40.059619 vd5659 wings[1260]:  WARN: [May  1 17:15:40.059] error while processing server event; closing websocket connection connection=8052d29d-809d-4a66-a691-3d9b7f672ee5 server=b1e06658-557b-46e4-bfec-f9871a1370bd subsystem=websocket
+May 01 17:15:40.059619 vd5659 wings[1260]: ERROR: [May  1 17:15:40.059] error closing websocket connection connection=8052d29d-809d-4a66-a691-3d9b7f672ee5 error=use of closed network connection server=b1e06658-557b-46e4-bfec-f9871a1370bd subsystem=websocket
+May 01 17:15:40.059619 vd5659 wings[1260]: Stacktrace:
+May 01 17:15:40.059619 vd5659 wings[1260]: use of closed network connection
+May 01 17:15:40.059619 vd5659 wings[1260]: github.com/pterodactyl/wings/router/websocket.(*Handler).registerListenerEvents.func1
+May 01 17:15:40.059619 vd5659 wings[1260]:         github.com/pterodactyl/wings/router/websocket/listeners.go:34
+May 01 17:15:40.059619 vd5659 wings[1260]: runtime.goexit
+May 01 17:15:40.059619 vd5659 wings[1260]:         runtime/asm_amd64.s:1700

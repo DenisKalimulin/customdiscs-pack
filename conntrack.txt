@@ -1,0 +1,2 @@
+nf_conntrack_count=170
+nf_conntrack_max=262144

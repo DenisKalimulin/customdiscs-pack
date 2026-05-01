@@ -1,0 +1,7 @@
+2: ens18: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether bc:24:11:e4:3a:88 brd ff:ff:ff:ff:ff:ff
+    RX:     bytes    packets errors dropped  missed   mcast           
+     281322502028 2992950768      0 3401412       0       0 
+    TX:     bytes    packets errors dropped carrier collsns           
+    1786960666133 1796355185      0       0       0       0 
+    altname enp0s18
